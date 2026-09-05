@@ -8,7 +8,7 @@ export const SECRET = {
   c: "#A8163F",
   cards: [
     "Antes de começar: escolham uma palavra que significa “parar imediatamente”. Digam em voz alta e combinem também que qualquer pessoa pode pular um desafio sem precisar justificar.",
-    "Olhar: fiquem frente a frente durante 30 segundos sem falar. Quem desviar o olhar primeiro deve responder: “o que em mim mais te provoca?",
+    "Olhar: fiquem frente a frente durante 30 segundos sem falar. Quem desviar o olhar primeiro deve responder: “o que em mim mais te provoca?”",
     "Confissão: descreva a última vez que sentiu muita vontade de me beijar ou ficar mais perto de mim. Onde estávamos e o que despertou isso?",
     "Aproximação: chegue bem perto, sem beijar, e diga no ouvido do outro uma coisa que você gostaria que acontecesse nesta noite.",
     "Beijo lento: beijem-se durante um minuto, mas sem usar as mãos.",
