@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { THEMES } from "../data/themes.js";
+import { ALL_DECKS } from "../data/themes.js";
+import { ART } from "../data/cardArt.js";
 import { shuffled } from "../utils.js";
 import Card3D from "./Card3D.jsx";
 import Controls from "./Controls.jsx";
@@ -9,7 +10,7 @@ import FinalRound from "./FinalRound.jsx";
  * A mesa de jogo: overlay em tela cheia com a carta atual,
  * navegacao entre as cartas do baralho e a rodada final.
  */
-export default function GameTable({ session, onClose, onSeen }) {
+export default function GameTable({ session, onClose, onSeen, onRedraw, restam }) {
   const [deck, setDeck] = useState(session.deck);
   const [pos, setPos] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -17,7 +18,7 @@ export default function GameTable({ session, onClose, onSeen }) {
 
   const finished = pos >= deck.length;
   const current = finished ? null : deck[pos];
-  const theme = current ? THEMES[current.t] : null;
+  const theme = current ? ALL_DECKS[current.t] : null;
 
   /* trava o scroll da pagina enquanto a mesa esta aberta */
   useEffect(() => {
@@ -106,13 +107,14 @@ export default function GameTable({ session, onClose, onSeen }) {
 
       <div className="stage" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
         {finished ? (
-          <FinalRound onAgain={onClose} />
+          <FinalRound onAgain={onClose} onRedraw={onRedraw} restam={restam} />
         ) : (
           <>
             <Card3D
               theme={theme}
               cardIndex={current.i}
               question={theme.cards[current.i]}
+              art={ART[current.t][current.i]}
               flipped={flipped}
               onReveal={reveal}
               backRef={backRef}

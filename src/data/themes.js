@@ -1,3 +1,5 @@
+import { SECRET } from "./secret.js";
+
 /**
  * Os 10 temas do baralho — 9 cartas em cada um (90 no total).
  * name: titulo do tema | c: cor do baralho | cards: perguntas
@@ -116,3 +118,7 @@ export const THEMES = [
 ];
 
 export const CARDS_POR_TEMA = 9;
+
+/** Todos os baralhos jogaveis: os dez temas + o baralho 11 (secreto). */
+export const ALL_DECKS = THEMES.concat([SECRET]);
+export const SECRET_INDEX = THEMES.length;

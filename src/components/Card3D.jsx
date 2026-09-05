@@ -1,6 +1,15 @@
 import { deckBg, pad } from "../utils.js";
+import Motif from "./Motif.jsx";
 
-export default function Card3D({ theme, cardIndex, question, flipped, onReveal, backRef }) {
+export default function Card3D({
+  theme,
+  cardIndex,
+  question,
+  art,
+  flipped,
+  onReveal,
+  backRef
+}) {
   function onKeyDown(e) {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
@@ -32,9 +41,12 @@ export default function Card3D({ theme, cardIndex, question, flipped, onReveal, 
             <span className="rule-line" style={{ color: theme.c }} />
             <b>{theme.name}</b>
           </div>
-          <div>
+          <div className="headrow">
             <div className="qnum" style={{ color: theme.c }}>
               {pad(cardIndex + 1)}
+            </div>
+            <div className="art" style={{ color: theme.c }}>
+              <Motif name={art} />
             </div>
           </div>
           <p className="question">{question}</p>
