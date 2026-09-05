@@ -57,15 +57,20 @@ export default function App() {
     if (el && el.focus) requestAnimationFrame(() => el.focus());
   }, []);
 
+  /* o mesmo gesto vai e volta: segurar de novo devolve a mesa aos dez temas */
   const onSecret = useCallback(() => {
-    if (secret.on) return;
+    if (secret.on) {
+      secret.lock();
+      setFlash("A mesa voltou aos dez temas.");
+      return;
+    }
     secret.unlock();
     setFlash("Baralho 11 desbloqueado — está no fim da mesa.");
   }, [secret]);
 
   const hideSecret = useCallback(() => {
     secret.lock();
-    setFlash("");
+    setFlash("A mesa voltou aos dez temas.");
   }, [secret]);
 
   return (

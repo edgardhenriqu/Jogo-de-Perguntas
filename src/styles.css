@@ -85,12 +85,23 @@
     padding:56px 0 40px;
   }
   .hero-mark{-webkit-touch-callout:none;user-select:none;-webkit-user-select:none;
+    position:relative;touch-action:manipulation;
     font-family:"Bodoni Moda","Didot",Georgia,serif;
     font-size:clamp(3.6rem,11vw,7rem);
     line-height:.86;font-weight:500;letter-spacing:-.02em;
     margin:10px 0 6px;
   }
   .hero-mark em{font-style:italic;font-weight:400;display:block;font-size:.44em;letter-spacing:.01em;color:var(--text-soft);margin-top:.18em}
+  /* a linha enche enquanto o titulo e segurado: e o unico sinal de que ha algo ali */
+  .hero-mark::after{
+    content:"";position:absolute;left:0;bottom:-6px;height:3px;width:0;border-radius:2px;
+    background:linear-gradient(90deg,transparent,#A8163F);
+    opacity:0;pointer-events:none;transition:width .18s ease,opacity .18s ease;
+  }
+  .hero-mark.holding::after{width:100%;opacity:.85;transition:width 1200ms linear,opacity .2s ease}
+  @media (prefers-reduced-motion:reduce){
+    .hero-mark.holding::after{width:100%;transition:opacity .2s ease}
+  }
   .hero p.lede{
     margin-top:18px;max-width:46ch;color:var(--text-soft);font-size:1.02rem;
   }

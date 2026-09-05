@@ -7,17 +7,17 @@ export const SECRET = {
   name: "Modo secreto",
   c: "#A8163F",
   cards: [
-    "Antes de tudo: combinem uma palavra que faz tudo parar na hora, sem explicação e sem clima pesado. Falem em voz alta qual vai ser.",
-    "Descreva com detalhes a última vez que bateu uma vontade absurda de mim: onde estávamos, o que eu estava fazendo, o que passou pela sua cabeça.",
-    "Sussurre no meu ouvido a fantasia que você nunca teve coragem de contar. Sem editar.",
-    "Que parte do meu corpo você fica olhando quando acha que eu não estou vendo? Mostre onde.",
-    "Desafio: tire uma peça de roupa minha usando só a boca.",
-    "Qual é o lugar mais inesperado onde você já quis me ter? O que te segurou?",
-    "Desafio: dois minutos se beijando sem usar as mãos. Quem tocar primeiro deve uma prenda — e quem ganhou escolhe qual.",
-    "Conte, do começo ao fim, a nossa transa que você repetiria hoje mesmo. O que exatamente te fez perder a cabeça?",
-    "Desafio: pelos próximos cinco minutos, você manda. Peça o que quiser, dentro do que os dois topam — e eu obedeço.",
-    "Já viu ou leu alguma coisa e pensou na hora: “quero fazer isso com ele/ela”? Descreva a cena.",
-    "Desafio: vende os olhos do outro e passeie um cubo de gelo — ou a boca — por onde quiser, por dois minutos. Ele só pode dizer “mais” ou “para”.",
-    "Se esta noite fosse inteira sobre o seu prazer, como ela seria do primeiro toque ao último segundo?"
+    "Antes de começar: escolham uma palavra que significa “parar imediatamente”. Digam em voz alta e combinem também que qualquer pessoa pode pular um desafio sem precisar justificar.",
+    "Olhar: fiquem frente a frente durante 30 segundos sem falar. Quem desviar o olhar primeiro deve responder: “o que em mim mais te provoca?",
+    "Confissão: descreva a última vez que sentiu muita vontade de me beijar ou ficar mais perto de mim. Onde estávamos e o que despertou isso?",
+    "Aproximação: chegue bem perto, sem beijar, e diga no ouvido do outro uma coisa que você gostaria que acontecesse nesta noite.",
+    "Beijo lento: beijem-se durante um minuto, mas sem usar as mãos.",
+    "Descoberta: diga qual parte do meu corpo mais chama sua atenção e mostre, com um toque suave, onde é.",
+    "Comando: durante dois minutos, uma pessoa escolhe como quer ser beijada, abraçada ou tocada por cima da roupa. Depois troquem.",
+    "Provocação: escolha três lugares do corpo do outro para beijar lentamente. A outra pessoa pode dizer apenas “continua”, “mais devagar” ou “para”.",
+    "Memória: conte qual foi um momento íntimo entre nós que você gostaria de repetir e explique o que tornou aquele momento tão marcante.",
+    "Olhos fechados: uma pessoa fecha os olhos enquanto a outra alterna beijos, carícias e aproximações por dois minutos. Quem estiver de olhos fechados guia dizendo o que gosta.",
+    "Cinco minutos: uma pessoa conduz os próximos cinco minutos, escolhendo beijos, posições para ficarem juntos e carícias, sempre dentro do que os dois já combinaram que é confortável.",
+    "Sem mais desafios: a partir daqui, parem de seguir regras. Perguntem um ao outro o que querem, mantenham o consentimento e deixem a intimidade evoluir naturalmente."
   ]
 };
